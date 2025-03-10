@@ -6,6 +6,21 @@
     <title>closure in JS</title>
 </head>
 <body>
-    
+    <script>
+        //Lexical Scoping
+   function outer(){
+let n_ame = "Muhammad Hamza";
+function inner(){
+console.log("inner", n_ame);
+
+}
+inner()
+
+   };
+   outer();
+   console.log("outer",n_ame);
+   
+
+    </script>
 </body>
 </html>
