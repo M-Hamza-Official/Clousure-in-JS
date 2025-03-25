@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        //Lexical Scoping
+        // Lexical Scoping
    function outer(){
 let n_ame = "Muhammad Hamza";
 function inner(){
@@ -21,6 +21,22 @@ inner()
    console.log("outer",n_ame);
    
 
+    </script>
+    <script>
+      //Closure
+      function Counter(){
+        let count =0;
+        return function incrementIt(){
+            count++
+            console.log(count);
+            
+
+        }
+      }
+
+      const closureCounter = Counter();
+      closureCounter()
+      
     </script>
 </body>
 </html>
